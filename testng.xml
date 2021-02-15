@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="datadrivenexample">
+	<test thread-count="5" name="correct name">
+		<parameter name="username" value="aniradhai"></parameter>
+		<parameter name="password" value="Jesus0110"></parameter>
+		<classes>
+			<class name="day1.DatadrivenExample" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="incorrect username">
+		<parameter name="username" value="aniii"></parameter>
+		<parameter name="password" value=""></parameter>
+		<classes>
+			<class name="day1.DatadrivenExample" />
+		</classes>
+	</test>
+	<test thread-count="5" name="incorrect password">
+		<parameter name="username" value="anisha"></parameter>
+		<parameter name="password" value=""></parameter>
+		<classes>
+			<class name="day1.DatadrivenExample" />
+		</classes>
+	</test>
+
+
+</suite> <!-- datadrivenexample -->
